@@ -51,7 +51,7 @@ def sphere_animation(N, tf, time_step, s_vector, M, L):
         Q = ax.quiver(0, 0, 0, l_vector[0][0], l_vector[0][1], l_vector[0][2],
                       arrow_length_ratio=0.05, color='blue', label=r'$\mathbf{s}(\omega t='+str(round(time/np.pi, 4))+'\pi)$')
         L = ax.legend()
-        return Q,
+        return Q  # no comma!
     else:
         if N == time_step +1: 
             Q.remove()
